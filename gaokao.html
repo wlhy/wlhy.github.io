@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang='zh'>
+
+<head>
+  <meta charset='UTF-8'>
+  <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+  <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+  <meta http-equiv="pragma" content="no-cache">  
+  <meta http-equiv="cache-control" content="no-cache, no-store, must-revalidate">  
+  <meta http-equiv="expires" content="0">
+  <title>高考倒计时</title>
+  <meta name="keywords" content="高考,倒计时,高考鸭,高考倒计时" />
+  <meta name="description" content="好想请风帮我传达,说不出口的思念" />
+  <link rel="shortcut icon" href="./favicon.png" type="image/x-icon">
+  <link rel="stylesheet" href="./style.css">
+  
+  <style>
+    /*#tp-weather-widget .sw-container {*/
+    /*  left: unset;*/
+    /*  right: 5px;*/
+    /*  top: 5px;*/
+    /*  bottom: unset;*/
+    /*}*/
+      
+    /*Lantern*/
+    /*Lan-END*/
+  </style>
+
+</head>
+
+<body>
+  <div class="bgi"><img src="" alt=""></div>
+  <!--<div class="bgi"><img src="https://bing.ee123.net/img/4k" alt=""></div>-->
+  <div id="lantern-strip" data-src="./trn-christmas-lights.png"></div>
+  <canvas id="snow"></canvas>
+  <div class='container'>
+    <main>
+      <!-- 顶部logo -->
+      <!-- <div class="banner">
+        <a href="./" class="logo">高 考 鸭</a>
+      </div> -->
+      <!-- 主体内容 -->
+      <div class="msg"><span class="title">距离王小葵<span id="exam-year"></span>年高考还有 </span><span>: </span><span id="day"></span> 天</div>
+      <div class="countdown"></div>
+      <div class="words" id="saying">
+        <span id="saying-text"></span>
+      </div>
+      <!-- 天气插件 -->
+  <div id="tp-weather-widget"></div>
+  <script>
+    (function(a,h,g,f,e,d,c,b){b=function(){d=h.createElement(g);c=h.getElementsByTagName(g)[0];d.src=e;d.charset="utf-8";d.async=1;c.parentNode.insertBefore(d,c)};a["SeniverseWeatherWidgetObject"]=f;a[f]||(a[f]=function(){(a[f].q=a[f].q||[]).push(arguments)});a[f].l=+new Date();if(a.attachEvent){a.attachEvent("onload",b)}else{a.addEventListener("load",b,false)}}(window,document,"script","SeniverseWeatherWidget","//cdn.sencdn.com/widget2/static/js/bundle.js?t="+parseInt((new Date().getTime() / 100000000).toString(),10)));
+    window.SeniverseWeatherWidget('show', {
+      flavor: "bubble",
+      location: "WX4FBXXFKE4F",
+      geolocation: true,
+      language: "zh-Hans",
+      unit: "c",
+      theme: "auto",
+      token: "eba881e1-b5ea-493e-9c06-208ed9409214",
+      hover: "enabled",
+      container: "tp-weather-widget"
+    })
+  </script>
+    <!--Lantern-->
+  <!--Lan-END-->
+    </main>
+    <!-- 页脚 -->
+    <footer>
+      <div id="welcome">
+          <!--<span id="welcome_msg"></span>-->
+      </div>
+      <p><a href="https://bing.com" target="_blank">Bing-必应每日壁纸</a>  <span id="bgi-txt"></span></p>
+    </footer>
+  </div>
+
+  <script src="./jquery.min.js"></script>
+  <script src="./script.js"></script>
+
+</body>
+
+</html>
