@@ -24,10 +24,10 @@ function getDate() {
     let newDay = 7;
 
     // 如果当前日期已经超过6月7日，则设置为下一年的高考日期
-    // if (oDate > new Date(newYear, newMonth, newDay)) {
+    // if (oDate > new Date(newYear, newMonth, newDay,9,0,0)) {
     //   newYear += 1;
     // }
-    targetDate = new Date(newYear, newMonth, newDay);
+    targetDate = new Date(newYear, newMonth, newDay,9,0,0);
     
     // 更新页面上显示的年份
     if (window.examYear) {
